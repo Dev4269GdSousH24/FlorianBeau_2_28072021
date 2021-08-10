@@ -1,0 +1,352 @@
+/* BODY _________________________________________________________________*/
+
+body {
+  font-family: "Raleway", sans-serif;
+  padding: 0 5em;
+  margin: 0;
+}
+
+/* Header ________________________________________________________________*/
+
+#container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+}
+
+/* ------------------------------- Menu -------------------------------- */
+
+#container {
+  margin-right: 0em;
+  line-height: 7.5em;
+}
+
+#logo {
+  order: -2;
+  line-height: 100%;
+  margin-right: auto;
+}
+
+#logo img {
+  height: 3.5em;
+}
+
+#liens {
+  display: flex;
+  width: 50%;
+}
+
+#container > a,
+#liens a {
+  margin: 0 0.5em;
+  padding: 0 1.5em;
+  font-size: 1.3em;
+  margin-top: 0.2em;
+  text-decoration: none;
+  color: black;
+}
+
+#liens a:hover {
+  color: #0065fc;
+  border-top: solid 0.15em #0065fc;
+  font-weight: none;
+  margin-top: 0;
+}
+
+#liens a:focus {
+  color: #0065fc;
+  border-top: solid 0.15em #0065fc;
+  font-weight: none;
+  margin-top: 0;
+}
+
+#container .inscription {
+  color: #0065fc;
+  font-weight: bold;
+}
+
+/* Main __________________________________________________________________*/
+
+h1 {
+  font-size: 1.7em;
+}
+
+p {
+  color: black;
+  font-size: 1.2em;
+}
+
+form div {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#gps {
+  border-bottom-left-radius: 1em;
+  border-top-left-radius: 1em;
+  width: 3.3em;
+  line-height: 3.36em;
+  background-color: #f2f2f2;
+  text-align: center;
+  font-size: 1.2rem;
+}
+#gps::before {
+  font-size: 1.1em;
+  vertical-align: center;
+}
+
+form div input {
+  height: 2.93em;
+  border: solid 0.1em #f2f2f2;
+  border-right: none;
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 0;
+  padding-inline-start: 1em;
+  color: black;
+  font-family: "Raleway", sans-serif;
+}
+
+form div input::placeholder {
+  color: black;
+}
+
+.bouton {
+  font-size: 1.3em;
+  font-weight: bold;
+  width: 8em;
+  height: 3.14em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  text-align: center;
+  color: #fff;
+  background: #0065fc;
+  border-style: solid;
+  border-color: #0065fc;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+}
+.bouton::before {
+  content: "Rechercher";
+}
+
+/* ----------------------Filtres-----------------------*/
+
+#container2 {
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 1.2em;
+  line-height: 2.5em;
+}
+
+#container2 h4 {
+  margin-right: 1.5em;
+}
+
+#container2 div {
+  display: flex;
+  flex-wrap: nowrap;
+  border: solid 0.2em #f2f2f2;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  border-left: none;
+  text-align: center;
+  height: 2.25em;
+  line-height: 2em;
+  padding-right: 0.75em;
+  margin: 0.33em 0;
+  margin-right: 1em;
+}
+
+#container2 div .fas {
+  border: solid 0.1em #deebff;
+  border-radius: 100%;
+  background-color: #deebff;
+  width: 2.2em;
+  height: 2.2em;
+  color: #0065fc;
+  font-size: 1.1em;
+  line-height: 2em;
+  margin-top: -0.165em;
+  margin-right: 0.5em;
+}
+
+/* ----------------------Logements-----------------------*/
+
+#logements {
+  color: #000;
+  border-radius: 100%;
+  height: 2em;
+  width: 2em;
+  background-color: #fff;
+  border: solid 2px #f2f2f2;
+  text-emphasis: center;
+}
+
+#container3 {
+  display: flex;
+  line-height: 1.9em;
+}
+
+.fas.fa-info {
+  color: #0065fc;
+  background-color: white;
+  border: solid 0.15em #f2f2f2;
+  border-radius: 100%;
+  width: 1.45em;
+  height: 1.45em;
+  line-height: 1.4em;
+  text-align: center;
+  margin-right: 0.75em;
+}
+
+.fas.fa-info::before {
+  font-size: 0.8em;
+  vertical-align: center;
+}
+
+label {
+  display: block;
+  font: 1rem "Fira Sans", sans-serif;
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+  justify-content: ;
+}
+
+/* ----------------------- Hébergements à Marseille ---------------------- */
+
+#container4 {
+  background-color: #f2f2f2;
+  border-radius: 1.5em;
+  padding-left: 1em;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.accomodations {
+  display: flex;
+  height: auto;
+  width: 60%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title-hebergements {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.container4 .accomodations {
+  background-color: #f2f2f2;
+  justify-items: space-around;
+}
+
+.pictureMarseille {
+  height: 116px;
+  width: 175px;
+  object-fit: cover;
+}
+
+.gras {
+  font-weight: bold;
+}
+
+.popular {
+  display: flex;
+  background-color: #f2f2f2;
+  height: auto;
+  width: 40%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* ------------------------------ Responsive ----------------------------- */
+
+@media screen and (max-width: 880px) {
+  body {
+    padding: 0 1.5em;
+  }
+
+  #container img {
+    height: 3em;
+  }
+
+  #container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #liens {
+    width: 200%;
+    margin: 0 -1.5em;
+  }
+
+  #liens a {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border-bottom: solid 0.2em #f2f2f2;
+    border-top: none;
+  }
+
+  #liens a:hover {
+    border-bottom: solid 0.2em #0065fc;
+    border-top: none;
+    color: #0065fc;
+  }
+
+  #container > a:nth-child(3) {
+    order: -1;
+    align-self: flex-end;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  form div {
+    justify-content: center;
+    margin-top: 1em;
+  }
+
+  #gps {
+    width: 5.5rem;
+  }
+
+  form div input {
+    width: 100%;
+  }
+
+  .bouton {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    width: 5.5rem;
+    border-radius: 1em;
+    margin-left: -1.5em;
+  }
+
+  .bouton::before {
+    content: "";
+  }
+
+  #container2 h4 {
+    width: 100%;
+    margin: 0;
+  }
+}
