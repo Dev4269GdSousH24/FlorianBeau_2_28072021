@@ -1,8 +1,8 @@
 /* BODY _________________________________________________________________*/
 
-body {
+* {
   font-family: "Raleway", sans-serif;
-  padding: 0 5em;
+  padding: 0;
   margin: 0;
 }
 
@@ -219,55 +219,31 @@ label {
 input,
 label {
   margin: 0.4rem 0;
-  justify-content: ;
 }
 
 /* ----------------------- Hébergements à Marseille ---------------------- */
 
-#container4 {
-  background-color: #f2f2f2;
-  border-radius: 1.5em;
-  padding-left: 1em;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
+.activities * {
+  border: 1px solid black;
+  margin: 1px;
 }
 
-.accomodations {
+.activities {
   display: flex;
-  height: auto;
-  width: 60%;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
-.title-hebergements {
-  padding-top: 30px;
-  padding-left: 30px;
+.hotel {
+  height: 160px;
+  width: 200px;
 }
 
-.container4 .accomodations {
-  background-color: #f2f2f2;
-  justify-items: space-around;
+.hotel-pop {
+  height: 90px;
+  width: 200px;
 }
 
-.pictureMarseille {
-  height: 116px;
-  width: 175px;
-  object-fit: cover;
-}
-
-.gras {
-  font-weight: bold;
-}
-
-.popular {
+#hebergement {
   display: flex;
-  background-color: #f2f2f2;
-  height: auto;
-  width: 40%;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 /* ------------------------------ Responsive ----------------------------- */
