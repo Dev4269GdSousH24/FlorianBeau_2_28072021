@@ -1,9 +1,12 @@
 /* BODY _________________________________________________________________*/
 
+body {
+  padding: 0 5em;
+  margin: 0;
+}
+
 * {
   font-family: "Raleway", sans-serif;
-  padding: 0;
-  margin: 0;
 }
 
 /* Header ________________________________________________________________*/
@@ -34,7 +37,6 @@
 
 #liens {
   display: flex;
-  width: 50%;
 }
 
 #container > a,
@@ -42,7 +44,7 @@
   margin: 0 0.5em;
   padding: 0 1.5em;
   font-size: 1.3em;
-  margin-top: 0.2em;
+  margin-top: 0.15em;
   text-decoration: none;
   color: black;
 }
@@ -50,6 +52,7 @@
 #liens a:hover {
   color: #0065fc;
   border-top: solid 0.15em #0065fc;
+  border-bottom: none;
   font-weight: none;
   margin-top: 0;
 }
@@ -57,6 +60,7 @@
 #liens a:focus {
   color: #0065fc;
   border-top: solid 0.15em #0065fc;
+  border-bottom: none;
   font-weight: none;
   margin-top: 0;
 }
@@ -106,7 +110,6 @@ form div input {
   padding: 0;
   padding-inline-start: 1em;
   color: black;
-  font-family: "Raleway", sans-serif;
 }
 
 form div input::placeholder {
@@ -125,7 +128,6 @@ form div input::placeholder {
   background: #0065fc;
   border-style: solid;
   border-color: #0065fc;
-  font-family: "Raleway", sans-serif;
   cursor: pointer;
 }
 .bouton::before {
@@ -211,30 +213,78 @@ form div input::placeholder {
   vertical-align: center;
 }
 
-label {
-  display: block;
-  font: 1rem "Fira Sans", sans-serif;
-}
-
-input,
-label {
-  margin: 0.4rem 0;
-}
-
 /* ----------------------- Hébergements à Marseille ---------------------- */
 
-.activities * {
+.activities {
   border: 1px solid black;
   margin: 1px;
 }
 
 .activities {
   display: flex;
+  flex-wrap: wrap;
+}
+
+#hebergement {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 55%;
+  background-color: #f2f2f2;
+  border-radius: 1em;
+  max-width: 1200px;
+  margin-right: 30px;
+  padding-right: 30px;
+}
+
+#titre-hebergement {
+  width: 100%;
+  padding: 20px 10px 0px 30px;
+}
+
+#titre-afficher {
+  width: 100%;
+  margin: 0px 0px 20px 30px;
+}
+
+.fas.fa-star {
+  font-size: 15px;
+  color: #0065fc;
+}
+
+.fas.fa-star.silver {
+  font-size: 15px;
+  color: silver;
 }
 
 .hotel {
-  height: 160px;
-  width: 200px;
+  height: 200px;
+  width: 100px;
+  flex: 1 0 26%;
+  border: 2px solid black;
+  margin: 0px 0px 30px 30px;
+  border: solid 4px white;
+  border-radius: 20px 20px 20px 20px;
+  background-color: white;
+}
+
+.hotel h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
+
+.hotel p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 12px;
+}
+
+.image-hotel {
+  height: 100px;
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  background-color: white;
+  object-fit: cover;
 }
 
 .hotel-pop {
@@ -242,8 +292,10 @@ label {
   width: 200px;
 }
 
-#hebergement {
-  display: flex;
+#populaires {
+  width: 35%;
+  background-color: #f2f2f2;
+  border-radius: 1em;
 }
 
 /* ------------------------------ Responsive ----------------------------- */
@@ -260,6 +312,7 @@ label {
   #container {
     flex-wrap: wrap;
     justify-content: space-between;
+    line-height: 7em;
   }
 
   #liens {
@@ -274,9 +327,16 @@ label {
     text-align: center;
     border-bottom: solid 0.2em #f2f2f2;
     border-top: none;
+    line-height: 3em;
   }
 
   #liens a:hover {
+    border-bottom: solid 0.2em #0065fc;
+    border-top: none;
+    color: #0065fc;
+  }
+
+  #liens a:focus {
     border-bottom: solid 0.2em #0065fc;
     border-top: none;
     color: #0065fc;
@@ -324,5 +384,9 @@ label {
   #container2 h4 {
     width: 100%;
     margin: 0;
+  }
+
+  #test {
+    color: blue;
   }
 }
