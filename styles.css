@@ -216,11 +216,6 @@ form div input::placeholder {
 /* ----------------------- Hébergements à Marseille ---------------------- */
 
 .activities {
-  border: 1px solid black;
-  margin: 1px;
-}
-
-.activities {
   display: flex;
   flex-wrap: wrap;
 }
@@ -244,58 +239,119 @@ form div input::placeholder {
 #titre-afficher {
   width: 100%;
   margin: 0px 0px 20px 30px;
+  font-weight: bold;
+  font-size: px;
 }
 
 .fas.fa-star {
   font-size: 15px;
   color: #0065fc;
+  padding-left: 8px;
 }
 
 .fas.fa-star.silver {
   font-size: 15px;
+  padding-left: 8px;
   color: silver;
 }
 
 .hotel {
-  height: 200px;
+  height: 220px;
   width: 100px;
   flex: 1 0 26%;
-  border: 2px solid black;
   margin: 0px 0px 30px 30px;
   border: solid 4px white;
   border-radius: 20px 20px 20px 20px;
   background-color: white;
+  box-shadow: 0px 0px 6px 0px #0000002e;
 }
 
 .hotel h3 {
-  margin-top: 0px;
+  margin-top: 5px;
   margin-bottom: 0px;
-  font-size: 15px;
+  padding-left: 7px;
+  font-size: 18px;
 }
 
 .hotel p {
   margin-bottom: 0px;
   margin-top: 0px;
-  font-size: 12px;
+  padding-left: 7px;
+  font-size: 16px;
 }
 
 .image-hotel {
-  height: 100px;
+  height: 140px;
   width: 100%;
   border-radius: 16px 16px 0px 0px;
   background-color: white;
   object-fit: cover;
 }
 
-.hotel-pop {
-  height: 90px;
-  width: 200px;
-}
+/* -----------------------------------Les plus populaires------------------------------------------ */
 
 #populaires {
   width: 35%;
   background-color: #f2f2f2;
   border-radius: 1em;
+  padding: 20px 10px 0px 30px;
+}
+
+.hotel-pop {
+  display: flex;
+  height: 140px;
+  width: 575px;
+  border: solid 4px white;
+  border-radius: 14px 14px 14px 14px;
+  background-color: #fff;
+  margin: 0px 0px 30px 0px;
+}
+
+.image-pop {
+  height: 140px;
+  width: 200px;
+  border-radius: 14px 0px 0px 14px;
+  object-fit: cover;
+}
+
+.div-pop {
+  margin-left: 10px;
+}
+
+.stars {
+  margin-left: -7px;
+}
+
+/* ------------------------------ Activités à Marseille ------------------------------------------ */
+#activites {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#titre-activites {
+  width: 100%;
+}
+
+.div-verticlales {
+  display: column;
+  height: 50px;
+  width: 50px;
+}
+
+.div-horizontales {
+  height: 50px;
+  width: 50px;
+}
+
+.image-verticlales {
+  height: 50px;
+  width: 50px;
+}
+
+.image-horizontales {
+  height: 50px;
+  width: 50px;
 }
 
 /* ------------------------------ Responsive ----------------------------- */
@@ -384,9 +440,5 @@ form div input::placeholder {
   #container2 h4 {
     width: 100%;
     margin: 0;
-  }
-
-  #test {
-    color: blue;
   }
 }
