@@ -263,7 +263,7 @@ form div input::placeholder {
   border: solid 4px white;
   border-radius: 20px 20px 20px 20px;
   background-color: white;
-  box-shadow: 0px 0px 6px 0px #0000002e;
+  box-shadow: 0px 0px 7px 0px #0000002e;
 }
 
 .hotel h3 {
@@ -305,6 +305,7 @@ form div input::placeholder {
   border-radius: 14px 14px 14px 14px;
   background-color: #fff;
   margin: 0px 0px 30px 0px;
+  box-shadow: 0px 0px 6px 0px #0000002e;
 }
 
 .image-pop {
@@ -327,31 +328,129 @@ form div input::placeholder {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-height: 600px;
 }
 
 #titre-activites {
   width: 100%;
 }
 
-.div-verticlales {
+#div-verticale h3 {
+  margin-left: 25px;
+}
+
+/* Element 1 */
+
+#div-verticale {
+  height: 600px;
+  width: 400px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+}
+
+.image-verticale {
+  height: 540px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* Element 2 */
+
+#div-horizontale   /* ---- div générale avec colonne ---- */ {
+  flex-direction: column;
+  width: 400px;
+  height: 600px;
+}
+
+.class-horizontale1 /* ---- div 1 en haut ---- */ {
+  height: 300px;
+  width: 400px;
+  margin-bottom: 45px;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.image-horizontale1 /* ---- div 1 en haut ---- */ {
+  height: 225px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.class-horizontale1 h3 {
+  margin-left: 25px;
+}
+
+.image-horizontale2 /* ---- div 2 en bas ---- */ {
+  height: 170px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.class-horizontale2 /* ---- div 2 en bas ---- */ {
+  border-radius: 20px 20px 20px 20px;
+  height: 250px;
+  width: 400px;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+}
+
+.class-horizontale2 h3 {
+  margin-left: 25px;
+}
+
+/* Element 3 */
+
+#div-verticale {
+  height: 600px;
+  width: 400px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 0px 7px 0px #0000002e;
+}
+
+.image-verticale {
+  height: 540px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* Element 4 */
+
+#class-horizontale3 {
   display: column;
-  height: 50px;
-  width: 50px;
+  height: 600px;
 }
 
-.div-horizontales {
-  height: 50px;
-  width: 50px;
+.class-horizontale3 {
+  height: 275px;
+  margin-bottom: 50px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 0px 7px 0px #0000002e;
 }
 
-.image-verticlales {
-  height: 50px;
-  width: 50px;
+.class-horizontale4 {
+  height: 275px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 0px 7px 0px #0000002e;
 }
 
-.image-horizontales {
-  height: 50px;
-  width: 50px;
+.image-horizontale3 {
+  height: 200px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.class-horizontale3 h3 {
+  margin-left: 25px;
+}
+
+.class-horizontale4 h3 {
+  margin-left: 25px;
 }
 
 /* ------------------------------ Responsive ----------------------------- */
