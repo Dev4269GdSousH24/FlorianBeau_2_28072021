@@ -9,6 +9,20 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+/* Effet de zoom sur les images au survol de la souris */
+
+.div-image {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+.image-zoom {
+  transition: 0.4s;
+}
+.image-zoom:hover {
+  transform: scale(1.04);
+}
+
 /* Header ________________________________________________________________*/
 
 #container {
@@ -179,6 +193,23 @@ form div input::placeholder {
   margin-right: 0.5em;
 }
 
+/* Effet sur les filtres de recherche au survol de la souris */
+
+/* #container2 div .fa-money-bill-wave:hover { */
+  background-color: #fff;
+}
+
+#div .filtres-boutons:hover {
+  cursor: pointer;
+  background: #000;
+  transition-duration: 0.25s;
+}
+
+.filtres-boutons:hover .fa-money-bill-wave:hover {
+  background: #568423;
+  transition-duration: 0.25s;
+}
+
 /* ----------------------Logements-----------------------*/
 
 #logements {
@@ -215,7 +246,7 @@ form div input::placeholder {
 
 /* ----------------------- Hébergements à Marseille ---------------------- */
 
-.activities {
+.hotels {
   display: flex;
   flex-wrap: wrap;
 }
@@ -226,7 +257,7 @@ form div input::placeholder {
   flex: 1 0 55%;
   background-color: #f2f2f2;
   border-radius: 1em;
-  max-width: 1200px;
+  max-width: 100%;
   margin-right: 30px;
   padding-right: 30px;
 }
@@ -240,24 +271,23 @@ form div input::placeholder {
   width: 100%;
   margin: 0px 0px 20px 30px;
   font-weight: bold;
-  font-size: px;
+  font-size: 20px;
 }
 
 .fas.fa-star {
   font-size: 15px;
   color: #0065fc;
-  padding-left: 8px;
+  padding-left: 1px;
 }
 
 .fas.fa-star.silver {
   font-size: 15px;
-  padding-left: 8px;
+  padding-left: 1px;
   color: silver;
 }
 
 .hotel {
   height: 220px;
-  width: 100px;
   flex: 1 0 26%;
   margin: 0px 0px 30px 30px;
   border: solid 4px white;
@@ -291,16 +321,29 @@ form div input::placeholder {
 /* -----------------------------------Les plus populaires------------------------------------------ */
 
 #populaires {
-  width: 35%;
   background-color: #f2f2f2;
   border-radius: 1em;
-  padding: 20px 10px 0px 30px;
+  padding: 20px 30px 0px 30px;
+  max-width: 33%;
+  min-width: 390px;
+}
+
+.chart-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-chart-line {
+  align-self: center;
+}
+
+.fa-chart-line:before {
+  font-size: 30px;
 }
 
 .hotel-pop {
   display: flex;
   height: 140px;
-  width: 575px;
   border: solid 4px white;
   border-radius: 14px 14px 14px 14px;
   background-color: #fff;
@@ -319,8 +362,22 @@ form div input::placeholder {
   margin-left: 10px;
 }
 
+.div-pop h3 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-left: 7px;
+  font-size: 18px;
+}
+
+.div-pop p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-left: 7px;
+  font-size: 16px;
+}
+
 .stars {
-  margin-left: -7px;
+  margin-left: 6px;
 }
 
 /* ------------------------------ Activités à Marseille ------------------------------------------ */
@@ -330,20 +387,19 @@ form div input::placeholder {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  max-height: 600px;
 }
 
 #titre-activites {
   width: 100%;
 }
 
-#div-verticale h3 {
+.div-verticale h3 {
   margin-left: 25px;
 }
 
-/* Element 1 */
+/* Element 1&3 */
 
-#div-verticale {
+.div-verticale {
   height: 600px;
   width: 400px;
   border-radius: 20px 20px 20px 20px;
@@ -359,7 +415,7 @@ form div input::placeholder {
 
 /* Element 2 */
 
-#div-horizontale   /* ---- div générale avec colonne ---- */ {
+.div-horizontale   /* ---- div générale avec colonne ---- */ {
   flex-direction: column;
   width: 400px;
   height: 600px;
@@ -402,30 +458,10 @@ form div input::placeholder {
   margin-left: 25px;
 }
 
-/* Element 3 */
-
-#div-verticale {
-  height: 600px;
-  width: 400px;
-  border-radius: 20px 20px 20px 20px;
-  box-shadow: 0px 0px 7px 0px #0000002e;
-}
-
-.image-verticale {
-  height: 540px;
-  width: 400px;
-  object-fit: cover;
-  border-radius: 20px 20px 0px 0px;
-}
-
 /* Element 4 */
 
-#class-horizontale3 {
-  display: column;
-  height: 600px;
-}
-
 .class-horizontale3 {
+  display: column;
   height: 275px;
   margin-bottom: 50px;
   border-radius: 20px 20px 20px 20px;
@@ -451,6 +487,45 @@ form div input::placeholder {
 
 .class-horizontale4 h3 {
   margin-left: 25px;
+}
+
+/* -------------------------------- Footer -------------------------------------------------------- */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+  margin: 0 -5em;
+  padding: 3em;
+}
+
+#div-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.column-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.column-footer h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.column-footer p {
+  line-height: 30px;
+  font-size: 20px;
+  margin: 0;
+}
+
+.footer-liens:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
 }
 
 /* ------------------------------ Responsive ----------------------------- */
@@ -539,5 +614,9 @@ form div input::placeholder {
   #container2 h4 {
     width: 100%;
     margin: 0;
+  }
+
+  .footer {
+    margin: 0 -1.5em;
   }
 }
