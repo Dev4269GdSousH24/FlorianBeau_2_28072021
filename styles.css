@@ -1,8 +1,7 @@
 /* BODY _________________________________________________________________*/
 
 body {
-  padding: 0 5em;
-  margin: 0;
+  margin: 0 5em;
 }
 
 * {
@@ -67,7 +66,7 @@ body {
   color: #0065fc;
   border-top: solid 0.15em #0065fc;
   border-bottom: none;
-  font-weight: none;
+  font-weight: normal;
   margin-top: 0;
 }
 
@@ -75,7 +74,7 @@ body {
   color: #0065fc;
   border-top: solid 0.15em #0065fc;
   border-bottom: none;
-  font-weight: none;
+  font-weight: normal;
   margin-top: 0;
 }
 
@@ -148,6 +147,11 @@ form div input::placeholder {
   content: "Rechercher";
 }
 
+.bouton:hover {
+  background-color: #0011fc;
+  border: #0011fc;
+}
+
 /* ----------------------Filtres-----------------------*/
 
 #container2 {
@@ -195,19 +199,9 @@ form div input::placeholder {
 
 /* Effet sur les filtres de recherche au survol de la souris */
 
-/* #container2 div .fa-money-bill-wave:hover { */
-  background-color: #fff;
-}
-
-#div .filtres-boutons:hover {
+.filtres-boutons:hover {
+  background-color: #f2f2f2;
   cursor: pointer;
-  background: #000;
-  transition-duration: 0.25s;
-}
-
-.filtres-boutons:hover .fa-money-bill-wave:hover {
-  background: #568423;
-  transition-duration: 0.25s;
 }
 
 /* ----------------------Logements-----------------------*/
@@ -219,7 +213,7 @@ form div input::placeholder {
   width: 2em;
   background-color: #fff;
   border: solid 2px #f2f2f2;
-  text-emphasis: center;
+  text-emphasis: initial;
 }
 
 #container3 {
@@ -387,6 +381,7 @@ form div input::placeholder {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
+  margin-top: 1em;
 }
 
 #titre-activites {
@@ -461,7 +456,6 @@ form div input::placeholder {
 /* Element 4 */
 
 .class-horizontale3 {
-  display: column;
   height: 275px;
   margin-bottom: 50px;
   border-radius: 20px 20px 20px 20px;
@@ -491,41 +485,54 @@ form div input::placeholder {
 
 /* -------------------------------- Footer -------------------------------------------------------- */
 
-.footer {
+footer {
+  margin: 0 -5em;
+}
+
+#container-footer {
   display: flex;
   align-items: center;
   justify-content: center;
   background: #f2f2f2;
-  margin: 0 -5em;
-  padding: 3em;
+  margin-top: 3em;
+  padding: 0 3em;
 }
 
 #div-footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .column-footer {
   display: flex;
   flex-direction: column;
   padding: 2em;
+  width: 28%;
 }
 
 .column-footer h3 {
   font-size: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .column-footer p {
   line-height: 30px;
   font-size: 20px;
-  margin: 0;
+  margin: 10px;
 }
 
 .footer-liens:hover {
-    cursor: pointer;
-    text-decoration-line: underline;
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+  font-size: 18px;
+  padding: 2px;
 }
 
 /* ------------------------------ Responsive ----------------------------- */
