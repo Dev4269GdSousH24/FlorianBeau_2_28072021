@@ -139,8 +139,7 @@ form div input::placeholder {
   text-align: center;
   color: #fff;
   background: #0065fc;
-  border-style: solid;
-  border-color: #0065fc;
+  border-style: none;
   cursor: pointer;
 }
 .bouton::before {
@@ -149,7 +148,6 @@ form div input::placeholder {
 
 .bouton:hover {
   background-color: #0011fc;
-  border: #0011fc;
 }
 
 /* ----------------------Filtres-----------------------*/
@@ -185,13 +183,12 @@ form div input::placeholder {
 }
 
 #container2 div .fas {
-  border: solid 0.1em #deebff;
   border-radius: 100%;
   background-color: #deebff;
   width: 2.2em;
   height: 2.2em;
   color: #0065fc;
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 2em;
   margin-top: -0.165em;
   margin-right: 0.5em;
@@ -200,8 +197,8 @@ form div input::placeholder {
 /* Effet sur les filtres de recherche au survol de la souris */
 
 .filtres-boutons:hover {
-  background-color: #f2f2f2;
   cursor: pointer;
+  background-color: #f2f2f2;
 }
 
 /* ----------------------Logements-----------------------*/
@@ -291,7 +288,7 @@ form div input::placeholder {
   flex: 1 0 26%;
   min-width: 13em;
   margin: 0px 0px 30px 30px;
-  border: solid 4px white;
+  border: solid 4px #fff;
   border-radius: 20px 20px 20px 20px;
   background-color: white;
   box-shadow: 0px 0px 7px 0px #0000002e;
@@ -320,6 +317,10 @@ form div input::placeholder {
   margin-bottom: 0px;
   padding-left: 7px;
   font-size: 18px;
+}
+
+.hotel > *:hover {
+  cursor: pointer;
 }
 
 .hotel p {
@@ -378,6 +379,10 @@ form div input::placeholder {
   box-shadow: 0px 0px 6px 0px #0000002e;
 }
 
+.hotel-pop > *:hover {
+  cursor: pointer;
+}
+
 .image-pop {
   height: 140px;
   width: 140px;
@@ -412,6 +417,11 @@ form div input::placeholder {
   justify-content: space-between;
   width: 100%;
   margin: 1em 1em 0;
+}
+
+.div-verticale,
+.div-horizontale > *:hover {
+  cursor: pointer;
 }
 
 #titre-activites {
@@ -733,8 +743,6 @@ a {
   .bouton {
     font-weight: 900;
     font-family: "Font Awesome 5 Free";
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
     display: inline-block;
     font-style: normal;
     font-variant: normal;
