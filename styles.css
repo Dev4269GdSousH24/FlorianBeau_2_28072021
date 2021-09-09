@@ -8,6 +8,10 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+body a {
+  padding: 0;
+}
+
 /* Effet de zoom sur les images au survol de la souris */
 
 .div-image {
@@ -366,20 +370,23 @@ form div input::placeholder {
   font-size: 30px;
 }
 
+#populaires > a {
+  min-width: 18em;
+  max-width: 100%;
+  flex: 1 0 32%;
+  margin: 0px 0px 30px 0px;
+}
+
 .hotel-pop {
   display: flex;
   height: 140px;
   border: solid 4px white;
   border-radius: 14px 14px 14px 14px;
   background-color: #fff;
-  margin: 0px 0px 30px 0px;
-  flex: 1 0 32%;
-  min-width: 20em;
-  max-width: 100%;
   box-shadow: 0px 0px 6px 0px #0000002e;
 }
 
-.hotel-pop > *:hover {
+.hotel-pop:hover {
   cursor: pointer;
 }
 
@@ -393,6 +400,7 @@ form div input::placeholder {
 
 .div-pop {
   margin-left: 10px;
+  width: 100%;
 }
 
 .div-pop h3 {
@@ -515,7 +523,7 @@ form div input::placeholder {
 #activites .class-horizontale3 h3,
 #activites .class-horizontale4 h3 {
   margin-left: 25px;
-  margin-top: 12px;
+  margin-top: 4px;
 }
 
 .image-verticale,
@@ -619,7 +627,7 @@ a {
     margin-right: 30px;
   }
 
-  .hotel-pop {
+  #populaires > a {
     margin-right: 30px;
     flex-basis: 29%;
   }
@@ -643,12 +651,12 @@ a {
 }
 
 @media screen and (max-width: 1103px) {
-  .hotel-pop {
+  #populaires > a {
     flex-basis: 51%;
   }
 
   .image-pop {
-    width: 33%;
+    width: 50%;
   }
 }
 
@@ -696,7 +704,6 @@ a {
 
   #liens a {
     width: 50%;
-    padding: 0;
     margin: 0;
     text-align: center;
     border-bottom: solid 0.2em #f2f2f2;
