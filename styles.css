@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+header {
+  margin: 0 15px;
+}
+
 * {
   font-family: "Raleway", sans-serif;
 }
@@ -91,16 +95,20 @@ body a {
 
 h1 {
   font-size: 1.7em;
+  margin: 10px 15px 15px 15px;
+  margin-bottom: 10px;
 }
 
 p {
   color: black;
   font-size: 1.2em;
+  margin: 0 15px;
 }
 
 form div {
   display: flex;
   flex-wrap: nowrap;
+  margin: 0 15px;
 }
 
 #gps {
@@ -163,6 +171,7 @@ form div input::placeholder {
   align-items: center;
   font-size: 1.2em;
   line-height: 2.5em;
+  margin: 0 15px;
 }
 
 #container2 h4 {
@@ -220,6 +229,7 @@ form div input::placeholder {
 #container3 {
   display: flex;
   line-height: 1.9em;
+  margin: 0 15px;
 }
 
 .fas.fa-info {
@@ -540,7 +550,6 @@ form div input::placeholder {
 /* -------------------------------- Footer -------------------------------------------------------- */
 
 footer {
-  margin: 5em -5em 0;
   background: #f2f2f2;
   padding: 1em 3em;
 }
@@ -683,7 +692,6 @@ a {
   }
 
   #liens {
-    width: 200%;
     margin: 0 -30px;
   }
 
@@ -756,5 +764,13 @@ a {
 
   footer {
     padding: 0;
+  }
+
+  .hotel-pop {
+    height: auto;
+  }
+
+  .image-pop {
+    height: auto;
   }
 }
