@@ -244,12 +244,13 @@ form div input::placeholder {
 .hotels {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -1em;
+  width: 100%;
 }
 
 .hotels > div:first-child {
   display: flex;
   flex-wrap: wrap-reverse;
+  width: 100%;
 }
 
 #hebergement {
@@ -260,12 +261,10 @@ form div input::placeholder {
   border-radius: 1em;
   max-width: 100%;
   margin: 0 1em;
-  padding-right: 30px;
 }
 
 #titre-hebergement {
   width: 100%;
-  padding: 20px 10px 0px 1.5em;
 }
 
 #titre-afficher {
@@ -291,7 +290,7 @@ form div input::placeholder {
   height: 190px;
   flex: 1 0 26%;
   min-width: 13em;
-  margin: 0px 0px 30px 30px;
+  margin: 10px 20px;
   border: solid 4px #fff;
   border-radius: 20px 20px 20px 20px;
   background-color: white;
@@ -347,13 +346,12 @@ form div input::placeholder {
 #populaires {
   background-color: #f2f2f2;
   border-radius: 1em;
-  padding: 20px 30px 0px 30px;
-  min-width: 355px;
   flex: 1 0 22%;
   margin: 0 1em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
 }
 
 #populaires > div {
@@ -607,10 +605,6 @@ a {
     margin: 0 30px;
   }
 
-  .hotels {
-    margin: 0 -30px;
-  }
-
   #hebergement {
     background-color: initial;
   }
@@ -622,7 +616,7 @@ a {
   }
 
   #populaires {
-    flex-basis: 90%;
+    width: 100%;
     padding: 0;
     margin: auto;
   }
