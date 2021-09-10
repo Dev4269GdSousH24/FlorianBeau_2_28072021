@@ -1,7 +1,7 @@
 /* BODY _________________________________________________________________*/
 
 body {
-  margin: 0 5em;
+  margin: 0;
 }
 
 * {
@@ -602,7 +602,7 @@ a {
 
 @media screen and (max-width: 1374px) {
   body {
-    margin: 0 30px;
+    width: 100%;
   }
 
   #hebergement {
@@ -632,10 +632,6 @@ a {
   .div-box {
     margin: 0 15px;
     width: 47%;
-  }
-
-  footer {
-    margin: 30px -30px 0;
   }
 }
 
