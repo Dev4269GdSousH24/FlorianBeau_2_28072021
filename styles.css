@@ -356,7 +356,11 @@ form div input::placeholder {
   justify-content: space-between;
 }
 
-.chart-line {
+#populaires > div {
+  margin: 10px 20px;
+}
+
+#populaires .chart-line {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -371,10 +375,9 @@ form div input::placeholder {
 }
 
 #populaires > a {
-  min-width: 18em;
   max-width: 100%;
   flex: 1 0 32%;
-  margin: 0px 0px 30px 0px;
+  margin: 10px 20px;
 }
 
 .hotel-pop {
@@ -620,16 +623,8 @@ a {
 
   #populaires {
     flex-basis: 90%;
-    padding-right: 0;
-  }
-
-  .chart-line {
-    margin-right: 30px;
-  }
-
-  #populaires > a {
-    margin-right: 30px;
-    flex-basis: 29%;
+    padding: 0;
+    margin: auto;
   }
 
   #activites {
