@@ -99,6 +99,10 @@ h1 {
   margin-bottom: 10px;
 }
 
+h2 {
+  height: 1.5em;
+}
+
 p {
   color: black;
   font-size: 1.2em;
@@ -198,11 +202,13 @@ form div input::placeholder {
 #container2 div .fas {
   border-radius: 100%;
   background-color: #deebff;
-  width: 2.2em;
-  height: 2.2em;
+  min-width: 52px;
+  min-height: 52px;
+  width: 52px;
+  height: 52px;
   color: #0065fc;
-  font-size: 1.2em;
-  line-height: 2em;
+  font-size: 28px;
+  line-height: 52px;
   margin-top: -0.165em;
   margin-right: 0.5em;
 }
@@ -237,16 +243,18 @@ form div input::placeholder {
   background-color: white;
   border: solid 0.15em #f2f2f2;
   border-radius: 100%;
-  width: 1.45em;
-  height: 1.45em;
-  line-height: 1.4em;
+  min-width: 24px;
+  min-height: 24px;
+  width: 24px;
+  height: 24px;
+  line-height: 22px;
   text-align: center;
   margin-right: 0.75em;
 }
 
 .fas.fa-info::before {
-  font-size: 0.8em;
-  vertical-align: center;
+  font-size: 14px;
+  vertical-align: middle;
 }
 
 /* ----------------------- Hébergements à Marseille ---------------------- */
@@ -275,6 +283,7 @@ form div input::placeholder {
 
 #titre-hebergement {
   width: 100%;
+  margin: 0.83em 20px;
 }
 
 #titre-afficher {
@@ -297,7 +306,7 @@ form div input::placeholder {
 }
 
 .hotel {
-  height: 190px;
+  height: 230px;
   flex: 1 0 26%;
   min-width: 13em;
   margin: 10px 20px;
@@ -337,14 +346,13 @@ form div input::placeholder {
 }
 
 .hotel p {
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin: 0;
   padding-left: 7px;
   font-size: 16px;
 }
 
 .image-hotel {
-  height: 120px;
+  height: 150px;
   width: 100%;
   border-radius: 16px 16px 0px 0px;
   background-color: white;
@@ -362,16 +370,14 @@ form div input::placeholder {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-}
-
-#populaires > div {
-  margin: 10px 20px;
+  padding-bottom: 10px;
 }
 
 #populaires .chart-line {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin: 0 20px;
 }
 
 .fa-chart-line {
@@ -384,13 +390,13 @@ form div input::placeholder {
 
 #populaires > a {
   max-width: 100%;
-  flex: 1 0 32%;
+  flex: 1 0 51%;
   margin: 10px 20px;
 }
 
 .hotel-pop {
   display: flex;
-  height: 140px;
+  height: 160px;
   border: solid 4px white;
   border-radius: 14px 14px 14px 14px;
   background-color: #fff;
@@ -402,7 +408,6 @@ form div input::placeholder {
 }
 
 .image-pop {
-  height: 140px;
   width: 140px;
   min-width: 140px;
   border-radius: 14px 0px 0px 14px;
@@ -412,6 +417,7 @@ form div input::placeholder {
 .div-pop {
   margin-left: 10px;
   width: 100%;
+  max-
 }
 
 .div-pop h3 {
@@ -422,8 +428,7 @@ form div input::placeholder {
 }
 
 .div-pop p {
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin: 0;
   padding-left: 7px;
   font-size: 16px;
 }
@@ -609,7 +614,7 @@ a {
 
 /* ------------------------------ Responsive ----------------------------- */
 
-@media screen and (max-width: 1374px) {
+@media screen and (max-width: 1279px) {
   body {
     width: 100%;
   }
@@ -625,9 +630,11 @@ a {
   }
 
   #populaires {
-    width: 100%;
-    padding: 0;
-    margin: auto;
+    flex-basis: 100%;
+  }
+
+  #populaires > a {
+    flex-basis: 25%;
   }
 
   #activites {
@@ -644,7 +651,7 @@ a {
   }
 }
 
-@media screen and (max-width: 1103px) {
+@media screen and (max-width: 1099px) {
   #populaires > a {
     flex-basis: 51%;
   }
@@ -680,7 +687,7 @@ a {
   }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 879px) {
   #container img {
     height: 3em;
   }
@@ -692,7 +699,8 @@ a {
   }
 
   #liens {
-    margin: 0 -30px;
+    margin: 0 -15px;
+    width: calc(100% + 30px);
   }
 
   #liens a {
@@ -767,10 +775,95 @@ a {
   }
 
   .hotel-pop {
-    height: auto;
+    height: 180px;
   }
 
   .image-pop {
-    height: auto;
+    height: 180px;
+    min-width: 120px;
+  }
+
+  .div-pop p {
+    margin: 0;
+  }
+
+  #titre-hebergement {
+    margin: 15px 20px 6px 20px;
+  }
+
+  .hotel p {
+    padding-left: 0;
+  }
+
+  p {
+    margin: 0 15px;
+  }
+
+  .h #titre-activites {
+    margin: 5px 25px 20px 25px;
+  }
+
+  #titre-afficher {
+    margin: 0px 25px 20px 25px;
+  }
+
+  .div-verticale,
+  .div-horizontale {
+    margin: 10px 22px 10px 22px;
+  }
+
+  #container3 {
+    margin: 0 18px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+
+  header {
+    margin: 0;
+  }
+  #logo {
+    border-bottom: solid 2px #f2f2f2;
+    width: 100%;
+    text-align: center;
+  }
+
+  #liens {
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+  }
+  #liens a, #container {
+    border-width: 2px;
+  }
+  #liens a, #container .inscription {
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  #container .inscription {
+    margin: 0;
+    text-align: center;
+    border-bottom: solid 2px #f2f2f2;
+  }
+
+  form div input {
+    font-size: 14px;
+    height: 62px;
+  }
+
+  #container2 {
+    margin: 0 10px;
+  }
+
+  #container2 div {
+    margin-right: 0;
+  }
+
+  .column-footer {
+    width: 100%;
+    padding:10px;
   }
 }
